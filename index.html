@@ -72,18 +72,19 @@
       text-align: center;
     }
     .avatar {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
+      width: 180px;
+      height: 220px;
+      border-radius: 8px;
       background: #dde;
       margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      color: #888;
-      border: 3px solid #ccc;
+      border: 3px solid #ddd;
       overflow: hidden;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
     }
     .sidebar h3 {
       font-size: 1rem;
@@ -216,7 +217,7 @@
 
 <header>
   <h1>Haruto Kitagawa</h1>
-  <p class="affiliation">Master's Student · Computational and Applied Mathematics · University of Chicago</p>
+  <p class="affiliation">Master's Student in Computational and Applied Mathematics · University of Chicago</p>
   <p class="contact">
     haruto@umich.edu &nbsp;|&nbsp;
     <a href="https://linkedin.com/in/haruto-kitagawa-68a668334" target="_blank">LinkedIn</a>
@@ -235,10 +236,11 @@
 
   <!-- Sidebar -->
   <aside class="sidebar">
-    <div class="avatar">HK</div>
+    <div class="avatar">
+      <img src="photo.jpg" alt="Haruto Kitagawa" />
+    </div>
     <h3>Haruto Kitagawa</h3>
-    <p>M.S. Student (Incoming)</p>
-    <p>Dept. of Mathematics</p>
+    <p>Master's Student in Computational<br>and Applied Mathematics</p>
     <p>University of Chicago</p>
     <div class="links">
       <a href="mailto:haruto@umich.edu">✉ Email</a>
